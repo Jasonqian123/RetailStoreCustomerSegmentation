@@ -18,7 +18,7 @@ This project focuses on segmenting customers of a retail store based on their pu
 
 ### 2️⃣ **Exploratory Data Analysis (EDA)**
 - **Visualizing customer distributions** by Age, Income, and Spending Score
-![Displot Image]()
+![Displot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/distmix.png?raw=true)
   - `Age`: The slightly left-skewed distribution suggests that the majority of customers are young adults (20-40 years old), making them the core consumer base.
   - `Annual Income`: Most customers earn $50K-$80K, followed by a secondary group at $20K-$50K, with few earning above $85K. Given the 2024 U.S. average salary of $59,228, most customers fall within or above the national standard, indicating a primarily middle-income audience with some high earners.
   - `Spending Score`: A normal distribution suggests balanced spending behavior, with most customers exhibiting moderate spending habits and fewer extreme high or low spenders.
