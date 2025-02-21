@@ -14,11 +14,21 @@ This project focuses on segmenting customers of a retail store based on their pu
 ## 📊 Methodology
 ### 1️⃣ **Data Preprocessing**
 - Handle missing values, outliers, and standardize numerical features
-- Encode categorical variables if applicable (e.g., Gender)
+- Encode categorical variables (e.g. Gender)
 
 ### 2️⃣ **Exploratory Data Analysis (EDA)**
 - **Visualizing customer distributions** by Age, Income, and Spending Score
-- **Correlation analysis** to understand relationships between features
+![Displot Image](path_to_displot_image.png)  
+  - `Age`: The slightly left-skewed distribution suggests that the majority of customers are young adults (20-40 years old), making them the core consumer base.
+  - `Annual Income`: Most customers earn $50K-$80K, followed by a secondary group at $20K-$50K, with few earning above $85K. Given the 2024 U.S. average salary of $59,228, most customers fall within or above the national standard, indicating a primarily middle-income audience with some high earners.
+  - `Spending Score`: A normal distribution suggests balanced spending behavior, with most customers exhibiting moderate spending habits and fewer extreme high or low spenders.
+
+![KDE Plot Image](path_to_kde_image.png)  
+  - `Age`: Females dominate the younger age group, while males are more evenly distributed.
+  - `Annual Income`: No major difference in earnings, though males have a slightly wider range.
+  - `Spending Score`: Females tend to spend more, while male spending habits are more varied.
+  
+- **Correlation analysis** to understand relationships between variables
 - **Pairwise analysis** (e.g., Income vs. Spending Score) to identify patterns
 
 ### 3️⃣ **Clustering Algorithms**
