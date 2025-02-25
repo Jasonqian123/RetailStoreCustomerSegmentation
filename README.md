@@ -54,7 +54,12 @@ This project focuses on segmenting customers of a retail store based on their pu
 Annual Income helps define a customer’s purchasing capability. Spending Score helps measure actual spending behavior. Combining these two variables allows businesses to create more precise customer segments and improve marketing strategies. Therefore, it adopt the bivariate clustering method to segment customers.
 
 #### **Elbow Method for Optimal Cluster Selection**: Used to determine the optimal number of clusters (K)
-![KDE Plot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/kdemix.png?raw=true)
+
+<div align="center">
+
+![Elbow Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/elbow.png?raw=true)
+
+</div>
 
 The Elbow Method was used to determine the optimal number of clusters. A for loop was employed to calculate the inertia score for cluster numbers ranging from 1 to 10. The inertia values were then visualized using a line chart. The plot indicates that when the number of clusters (K) = 5, an elbow point appears, suggesting that 5 clusters may be an optimal choice for segmenting customers effectively.
 
