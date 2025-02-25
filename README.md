@@ -38,69 +38,24 @@ This project focuses on segmenting customers of a retail store based on their pu
 - **Spending Score:** **Females tend to spend more**, while **male spending habits are more varied**.  
 
 #### **Correlation Analysis** (Understanding Relationships Between Variables)  
+![KDE Plot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/kdemix.png?raw=true)
 
+- Age vs. Spending Score (-0.327): A negative correlation suggests that younger customers tend to have higher spending scores, while older customers are less likely to make high purchases.
+- Age vs. Annual Income (-0.012): The correlation is very close to zero, indicating no strong relationship between age and income in this dataset.
+- Annual Income vs. Spending Score (0.0099): The almost zero correlation means that higher income does not necessarily lead to higher spending scores.
+  
 ---
 ### 3️⃣ **Clustering Algorithms**
-- **K-Means Clustering**: Used for segmenting customers into distinct groups
-- **Hierarchical Clustering**: To validate and compare cluster structures
+Annual Income helps define a customer’s purchasing capability. Spending Score helps measure actual spending behavior. Combining these two variables allows businesses to create more precise customer segments and improve marketing strategies. Therefore, it adopt the bivariate clustering method to segment customers.
 
-## 📊 **Methodology**  
+#### **Elbow Method for Optimal Cluster Selection**: Used to determine the optimal number of clusters (K)
+![KDE Plot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/kdemix.png?raw=true)
 
-### 1️⃣ **Data Preprocessing**  
-- **Handle missing values**, detect outliers, and **standardize numerical features**.  
-- **Encode categorical variables** (e.g., Gender) for machine learning compatibility.  
+The Elbow Method was used to determine the optimal number of clusters. A for loop was employed to calculate the inertia score for cluster numbers ranging from 1 to 10. The inertia values were then visualized using a line chart. The plot indicates that when the number of clusters (K) = 5, an elbow point appears, suggesting that 5 clusters may be an optimal choice for segmenting customers effectively.
 
----
-
-### 2️⃣ **Exploratory Data Analysis (EDA)**  
-
-  #### Visualizing Customer Distributions (Age, Income, and Spending Score)  
-
-  ##### Distribution Plots (Histograms & KDE)  
-![Displot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/distmix.png?raw=true)  
-
-- **Age:** The **left-skewed distribution** indicates that most customers are **young adults (20-40 years old)**, making them the core consumer base.  
-- **Annual Income:** The majority earn **$50K-$80K**, followed by a secondary group at **$20K-$50K**, with a smaller segment earning **above $85K**. Given the **2024 U.S. average salary of $59,228**, most customers fall **within or above the national standard**, indicating a **predominantly middle-income audience** with some high earners.  
-- **Spending Score:** The **normal distribution** suggests a **balanced spending pattern**, with most customers having **moderate spending habits** and fewer extreme high or low spenders.
-  
-##### Gender-Based KDE Comparison 
-![KDE Plot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/kdemix.png?raw=true)  
-
-- **Age:** **Females dominate** the younger age group, while **males are more evenly distributed**.  
-- **Annual Income:** No major **income disparity**, though **males have a slightly wider income range**.  
-- **Spending Score:** **Females tend to spend more**, while **male spending habits are more varied**.  
-
----
-  #### **Correlation analysis** to understand relationships between variables
-  ####Pairwise analysis** (e.g., Income vs. Spending Score) to identify patterns
-
-## 📊 Methodology
-### 1️⃣ **Data Preprocessing**
-- Handle missing values, outliers, and standardize numerical features
-- Encode categorical variables (e.g. Gender)
-
-## 2️⃣ **Exploratory Data Analysis (EDA)**  
-
-### **Visualizing Customer Distributions by Age, Income, and Spending Score**  
-
-#### **📊 Distribution Plots (Histograms & KDE)**  
-![Displot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/distmix.png?raw=true)  
-
-- **Age:** The slightly **left-skewed distribution** suggests that the majority of customers are **young adults (20-40 years old)**, making them the core consumer base.  
-- **Annual Income:** Most customers earn **$50K-$80K**, followed by a secondary group at **$20K-$50K**, with few earning **above $85K**. Given the **2024 U.S. average salary of $59,228**, most customers fall **within or above the national standard**, indicating a **primarily middle-income audience** with some high earners.  
-- **Spending Score:** A **normal distribution** suggests **balanced spending behavior**, with most customers exhibiting **moderate spending habits** and fewer extreme high or low spenders.  
-
-  #### **Gender-Based KDE Comparison**
-![image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/kdemix.png?raw=true)
-    - `Age`: Females dominate the younger age group, while males are more evenly distributed.
-    - `Annual Income`: No major difference in earnings, though males have a slightly wider range.
-    - `Spending Score`: Females tend to spend more, while male spending habits are more varied.
-  
+#### **K-Means Clustering**: Used for segmenting customers into distinct groups
 
 
-### 3️⃣ **Clustering Algorithms**
-- **K-Means Clustering**: Used for segmenting customers into distinct groups
-- **Hierarchical Clustering**: To validate and compare cluster structures
 
 ## 📊 Visualizations
 - Identified **5 key customer segments** based on income and spending behavior.
