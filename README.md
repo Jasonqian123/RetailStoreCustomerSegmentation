@@ -38,9 +38,14 @@ This project focuses on segmenting customers of a retail store based on their pu
 - **Spending Score:** **Females tend to spend more**, while **male spending habits are more varied**.  
 
 #### **Correlation Analysis** (Understanding Relationships Between Variables)  
-![KDE Plot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/kdemix.png?raw=true)
 
-- Age vs. Spending Score (-0.327): A negative correlation suggests that younger customers tend to have higher spending scores, while older customers are less likely to make high purchases.
+<div align="center">
+
+![KDE Plot Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/corr.png?raw=true)
+
+</div>
+
+- Age vs. Spending Score (-0.33): A negative correlation suggests that younger customers tend to have higher spending scores, while older customers are less likely to make high purchases.
 - Age vs. Annual Income (-0.012): The correlation is very close to zero, indicating no strong relationship between age and income in this dataset.
 - Annual Income vs. Spending Score (0.0099): The almost zero correlation means that higher income does not necessarily lead to higher spending scores.
   
