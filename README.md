@@ -67,20 +67,39 @@ The Elbow Method was used to determine the optimal number of clusters. A for loo
 
 <div align="center">
 
-![Elbow Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/elbow.png?raw=true)
+![Seg Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/seg.png?raw=true)
 
 </div>
 
-Using the K-Means clustering algorithm from the sklearn library, we performed a bivariate clustering analysis based on Annual Income and Spending Score. By setting the number of clusters to 5 (n_clusters = 5), the algorithm grouped all data points into five distinct customer segments.
-Each data point was assigned a cluster label, and we visualized the results by plotting the data points, colored according to their assigned cluster, along with the center points (*) of each group. This segmentation clearly categorizes customers into five distinct groups based on their income levels and spending behavior.
+Using the K-Means clustering algorithm from the sklearn library, we performed a bivariate clustering analysis based on Annual Income and Spending Score. By setting the number of clusters to 5 (n_clusters = 5), the algorithm grouped all data points into five distinct customer segments.<br>
 
+Each data point was assigned a cluster label, and we visualized the results by plotting the data points, colored according to their assigned cluster, along with the center points (*) of each group. This segmentation clearly categorizes customers into five distinct groups based on their income levels and spending behavior.<br>
 
-## 📊 Visualizations
-- Identified **5 key customer segments** based on income and spending behavior.
+Customers represented by the green (Cluster 2) and purple (Cluster 4) groups exhibit high spending scores, indicating that they are the most engaged and profitable customer segments. These two groups should be prioritized as primary target audiences for marketing campaigns, loyalty programs, and personalized promotions to maximize revenue.
 
 
 ## 🔍 Key Findings
-- Identified **5 key customer segments** based on income and spending behavior.
+
+<div align="center">
+
+![Seg_gender Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/seg.png?raw=true)
+
+</div>
+
+<div align="center">
+
+![Seg_avg Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/seg.png?raw=true)
+
+</div>
+
+- Gender Distribution in High-Value Segments:<br>
+  By analyzing the gender proportions across clusters, we observe that Cluster 2 (53.8% female) and Cluster 4 (59.1% female), which represent the most profitable customer segments, have a higher percentage of female customers. This suggests that marketing efforts should focus on female-oriented products and promotions, such as fashion, beauty, and lifestyle items, to maximize engagement and revenue.
+  
+- Younger Customers Have Higher Purchase Intentions:<br>
+  By analyzing the average age and spending score across clusters, we find that younger customers exhibit the highest purchase intention(Cluster 2: Average age = 32.6, Average spending score = 82.1; Cluster 4: Average age = 25.2, Average spending score = 79.3). This indicates that younger consumers tend to spend more actively, whereas older customers have relatively lower purchase intentions. Targeting younger demographics with trend-driven promotions and digital engagement strategies could enhance profitability.
+  
+- Annual Income Does Not Directly Influence Spending:<br>
+  Despite common assumptions, higher income does not necessarily correlate with higher spending scores. For instance, Cluster 1 (avg. income = $88.2k) has a low spending score (17.1), while Cluster 4 (avg. income = $25.7k) maintains a high spending score (79.4). This suggests that marketing strategies should focus on behavioral segmentation rather than income levels, emphasizing factors such as shopping habits, brand engagement, and lifestyle preferences.
 
 ## 🔊 Recommendations
 - Identified **5 key customer segments** based on income and spending behavior.
