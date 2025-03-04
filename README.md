@@ -82,7 +82,7 @@ Customers represented by the green (Cluster 2) and purple (Cluster 4) groups exh
 
 <div align="center">
 
-![Seg_gender Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/seg.png?raw=true)
+![Seg_gender Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/seg_gender.png?raw=true)
 
 </div>
 
