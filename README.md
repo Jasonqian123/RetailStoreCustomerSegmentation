@@ -15,7 +15,7 @@ This project focuses on segmenting customers of a retail store based on their pu
 
 ### 1️⃣ **Data Preprocessing**  
 - **Handle missing values**, detect outliers, and **standardize numerical features**.  
-- **Encode categorical variables** (e.g., Gender) for machine learning compatibility.  
+- **Encode categorical variables** (e.g., Gender) for segmentation analysis.  
 
 ---
 
@@ -65,6 +65,14 @@ The Elbow Method was used to determine the optimal number of clusters. A for loo
 
 #### **K-Means Clustering**: Used for segmenting customers into distinct groups
 
+<div align="center">
+
+![Elbow Image](https://github.com/Jasonqian123/RetailStoreCustomerSegmentation/blob/main/elbow.png?raw=true)
+
+</div>
+
+Using the K-Means clustering algorithm from the sklearn library, we performed a bivariate clustering analysis based on Annual Income and Spending Score. By setting the number of clusters to 5 (n_clusters = 5), the algorithm grouped all data points into five distinct customer segments.
+Each data point was assigned a cluster label, and we visualized the results by plotting the data points, colored according to their assigned cluster, along with the center points (*) of each group. This segmentation clearly categorizes customers into five distinct groups based on their income levels and spending behavior.
 
 
 ## 📊 Visualizations
